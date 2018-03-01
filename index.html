@@ -3,8 +3,28 @@
 <head>
 	<meta charset="utf-8">
 	<title>GreatDev</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="script/jquery-1.7.min.js"></script>
 	<script src="script/slick.min.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#slideshow').slick({
+	      fade: true,
+	      arrows: true,
+		    dots: false,
+	      responsive: [
+	        {
+	          breakpoint: 481,
+	          settings: {
+		          arrows: false,
+		          dots: true
+		        }
+	        }
+	      ]
+    	});
+		});
+	</script>
+	<script src="script/script.js"></script>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="style/slick.css"/>
   <link rel="stylesheet" href="style/slick-theme.css"/>
@@ -29,10 +49,10 @@
 								  </li>
 								</ul>
 							</li>
-							<li><a href="#">Portfolio</a></li>
+							<li><a href="portfolio.html">Portfolio</a></li>
 							<li><a href="#">Our Team</a></li>
 							<li><a href="#">Blog</a></li>
-							<li><a href="#">Feedbacks</a></li>
+							<li><a href="#">REVIEWS</a></li>
 							<li><a href="#">Contacts</a></li>
 							<li>
 								<a href="#"><img src="images/contacts-linkedin-icon.png" alt="linkedin"></a>
@@ -95,24 +115,24 @@
 				<article>
 					<h2>outsourcing</h2>
 					<i></i>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+					<p>We are a fast-responding team, oriented to help you get the success in your business. That’s why we always listen to you and advise the best practices for the exact task.</p>
 					<i></i>
 					<ol>
-						<li>Lorem ipsum dolor sit amet, consectetur</li>
-						<li>Lorem ipsum dolor sit amet, consectetur</li>
-						<li>Lorem ipsum dolor sit amet, consectetur</li>
+						<li>Turn-key solutions of any complexity</li>
+						<li>Flexible costs and fixed ETA</li>
+						<li>24/7 support</li>
 					</ol>
 					<button><a href="#">SEE MORE&nbsp;&nbsp;&nbsp;<img src="images/about-arrow.png"></a></button>
 				</article>
 				<article>
 					<h2>outstaffing</h2>
 					<i></i>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+					<p>If you’re stuck in the development and you are in need of a new pair of hands – then our professionals can easily pick up your project to help you meet deadlines.</p>
 					<i></i>
 					<ol>
-						<li>Lorem ipsum dolor sit amet, consectetur</li>
-						<li>Lorem ipsum dolor sit amet, consectetur</li>
-						<li>Lorem ipsum dolor sit amet, consectetur</li>
+						<li>Cheaper than in-house team </li>
+						<li>Time management -> savings</li>
+						<li>Legal and safe</li>
 					</ol>
 					<button><a href="#">SEE MORE&nbsp;&nbsp;&nbsp;<img src="images/about-arrow.png"></a></button>
 				</article>
@@ -120,7 +140,7 @@
 		</div>
 		<div id="contacts">
 			<div id="iContacts">
-				<h2>Contacts</h2>
+				<h2>Contact us</h2>
 				<span>You can contact us in any way convenient for you</span>
 				<ul>
 					<li><img src="images/contacts-phone-icon.png" alt="mobile teleohone"><span>+38 (044) 432 23 23</span></li>
@@ -164,7 +184,7 @@
 							<li><a href="#">Portfolio</a></li>
 							<li><a href="#">Our Team</a></li>
 							<li><a href="#">Blog</a></li>
-							<li><a href="#">Feedbacks</a></li>
+							<li><a href="#">ReVIEWS</a></li>
 							<li><a href="#">Contacts</a></li>
 						</ul>
 					</nav>
@@ -178,35 +198,5 @@
 			</div>
 		</footer>
 	</div>
-	<script>
-		 $('#slideshow').slick({
-      fade: true,
-      arrows: true,
-	    dots: false,
-      responsive: [
-        {
-          breakpoint: 481,
-          settings: {
-	          arrows: false,
-	          dots: true
-	        }
-        }
-      ]
-    });
-
-    var toggle = document.querySelector('#menu-hunb');
-		var menuList = document.querySelector('#menu-list');
-
-	  toggle.addEventListener('click', function(e) {
-	    this.classList.toggle('opened');
-
-	    if (menuList.style.display == 'none' || menuList.style.display == '') {
-	    	menuList.style.display = 'block';
-	    }
-	    else {
-	    	menuList.style.display = 'none';
-	    }
-	  });
-	</script>
 </body>
 </html>

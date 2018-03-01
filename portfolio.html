@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>GreatDev</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style/portfolio-style.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="script/jquery-1.7.min.js"></script>
+	<script src="script/script.js"></script>
+	<script src="script/imtech_pager.js"></script>
+	<script>
+		var pager = new Imtech.Pager();		
+		$(document).ready(function() {
+		  pager.paragraphsPerPage = 6; // set amount elements per page
+		  pager.pagingContainer = $('#block-pagination'); // set of main container
+		  pager.paragraphs = $('li', pager.pagingContainer); // set of required containers
+		  pager.showPage(1);
+		});
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+		<div id="about">
+			<div id="iAbout">
+				<header>
+					<img src="images/logo.png" alt="GreatDev">
+					<nav id="menu-list">
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li class="dropdown">
+								<input type="checkbox">
+								<a href="#">Services<i class="fa fa-angle-down" aria-hidden="true"></i></a>
+								<ul class="dropdown-menu">
+								  <li>
+								  	<a href="#">OUTSOURCING</a>
+								  	<a href="#">OUTSTAFFING</a>
+								  </li>
+								</ul>
+							</li>
+							<li><a href="#">Portfolio</a></li>
+							<li><a href="#">Our Team</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">REVIEWS</a></li>
+							<li><a href="#">Contacts</a></li>
+							<li>
+								<a href="#"><img src="images/contacts-linkedin-icon.png" alt="linkedin"></a>
+								<a href="#"><img src="images/contacts-facebook-icon.png" alt="facebook"></a>
+								<a href="#"><img src="images/contacts-instagram-icon.png" alt="instagram"></a>
+								<a href="#"><img src="images/contacts-google+-icon.png" alt="google+"></a>
+							</li>
+						</ul>
+					</nav>
+					<button id="menu-hunb">
+				    <span class="bar-top"></span>
+				    <span class="bar-mid"></span>
+				    <span class="bar-bot"></span>
+				  </button>
+				</header>
+				<h1>PROJECTS WE SUCCESSFULLY DEVELOPED</h1>
+			</div>
+		</div>
+		<div id="projects">
+			<div id="iProjects">
+				<nav>
+					<ul>
+						<li class="activeProjectTab">WEB</li>
+						<li>MOBILE</li>
+						<li>E-COMMERCE</li>
+					</ul>
+				</nav>
+				<ul id="block-pagination">
+					<li>
+						<img src="images/projects-image-project1.png" alt="Project photo">
+						<div>
+							<span>WEB</span>
+							<span>E-COMMERCE</span>
+						</div>
+						<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in</p>
+						<button class="seeMore-tran"><a href="#">SEE MORE&nbsp;&nbsp;&nbsp;<img src="images/projects-arrow.png"></a></button>
+					</li>
+					<li>
+						<img src="images/projects-image-project2.png" alt="Project photo">
+						<div>
+							<span>WEB</span>
+							<span>E-COMMERCE</span>
+						</div>
+						<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in</p>
+						<button class="seeMore-tran"><a href="#">SEE MORE&nbsp;&nbsp;&nbsp;<img src="images/projects-arrow.png"></a></button>
+					</li>
+					<li>
+						<img src="images/projects-image-project3.png" alt="Project photo">
+						<div>
+							<span>WEB</span>
+							<span>E-COMMERCE</span>
+						</div>
+						<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in</p>
+						<button class="seeMore-tran"><a href="#">SEE MORE&nbsp;&nbsp;&nbsp;<img src="images/projects-arrow.png"></a></button>
+					</li>
+					<li>
+						<img src="images/projects-image-project4.png" alt="Project photo">
+						<div>
+							<span>WEB</span>
+							<span>E-COMMERCE</span>
+						</div>
+						<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in</p>
+						<button class="seeMore-fill"><a href="#">SEE MORE&nbsp;&nbsp;&nbsp;<img src="images/about-arrow.png"></a></button>
+					</li>
+					<li>
+						<img src="images/projects-image-project5.png" alt="Project photo">
+						<div>
+							<span>WEB</span>
+							<span>E-COMMERCE</span>
+						</div>
+						<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in</p>
+						<button class="seeMore-fill"><a href="#">SEE MORE&nbsp;&nbsp;&nbsp;<img src="images/about-arrow.png"></a></button>
+					</li>
+					<li>
+						<img src="images/projects-image-project6.png" alt="Project photo">
+						<div>
+							<span>WEB</span>
+							<span>E-COMMERCE</span>
+						</div>
+						<h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed</h4>
+						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in</p>
+						<button class="seeMore-fill"><a href="#">SEE MORE&nbsp;&nbsp;&nbsp;<img src="images/about-arrow.png"></a></button>
+					</li>
+					<li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li><li></li>
+				</ul>
+				<div id="pagingControls"></div>
+			</div>
+		</div>
+		<footer>
+			<div id="iFooter">
+					<nav>
+						<ul>
+							<li><a href="#">Home</a></li>
+							<li><a href="#">Services</a></li>
+							<li><a href="#">Portfolio</a></li>
+							<li><a href="#">Our Team</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">ReVIEWS</a></li>
+							<li><a href="#">Contacts</a></li>
+						</ul>
+					</nav>
+					<form>
+						<label for="email">Subscribe to our newsletter</label>
+						<input type="text" name="email" id="email" placeholder="Your email">
+						<button><img src="images/about-arrow.png"></button>
+					</form>
+					<img src="images/logo.png" alt="GreatDev">
+					<span>©2018 GreatDev. All rights reserved</span>
+			</div>
+		</footer>
+	</div>
+</body>
+</html>
