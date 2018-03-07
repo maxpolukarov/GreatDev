@@ -2,37 +2,31 @@
 	font-family: MontserratExtraLight;
 	src: url("../fonts/Montserrat-ExtraLight.ttf");
 }
-
 @font-face {
 	font-family: Montserrat;
 	src: url("../fonts/Montserrat-ExtraLight.ttf");
 	font-weight: 200;
 }
-
 @font-face {
 	font-family: Montserrat;
 	src: url("../fonts/Montserrat-Light.ttf");
 	font-weight: 300;
 }
-
 @font-face {
 	font-family: Montserrat;
 	src: url("../fonts/Montserrat-Regular.ttf");
 	font-weight: 400;
 }
-
 @font-face {
 	font-family: Montserrat;
 	src: url("../fonts/Montserrat-Medium.ttf");
 	font-weight: 500;
 }
-
 @font-face {
   font-family: Montserrat;
 	 src: url("../fonts/Montserrat-SemiBold.ttf");
 	 font-weight: 600;
 }
-
 @font-face {
   font-family: Montserrat;
 	 src: url("../fonts/Montserrat-Bold.ttf");
@@ -42,15 +36,12 @@
 textarea, button, input {
 	font-family: Montserrat;
 }
-
 * {
 	box-sizing: border-box;
 }
-
-body, h1, h2, h4, ul {
+body, h1, h2, h3, h4, ul, p {
   margin: 0;
 }
-
 ul {
 	list-style: none;
 	padding: 0;
@@ -65,20 +56,17 @@ ul {
 /* Start of the About block */
 
 #about {
-	/*outline: 1px solid red;*/
-	height: 700px;
 	background: url(../images/about-background.jpg);
-	padding-top: 20px;
+	background-size: cover;
+	padding: 20px 20px 108px;
 }
 
 #iAbout {
-	/*outline: 1px solid gray;*/
 	max-width: 1200px;
 	margin: 0 auto;
 }
 
 #about header {
-	/*outline: 1px orange solid;*/
 	max-width: 1072px;
 	overflow: hidden;
 	margin-bottom: 96px;
@@ -90,7 +78,6 @@ ul {
 }
 
 #about header ul {
-	/*outline: 1px solid black;*/
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -179,11 +166,9 @@ ul {
 /* Start of the Technologies block */
 
 #technologies {
-	/*outline: 1px solid green;*/
   max-width: 1201px;
 	margin: 0 auto;
-	height: 630px;
-	padding-top: 81px;
+	padding: 81px 20px 79px;
 }
 
 #technologies h2 {
@@ -225,7 +210,7 @@ ul {
 #slideshow .iSlider {
 	max-width: 1040px;
 	margin: 0 auto;
-	padding-top: 195px;
+	padding: 195px 20px 0;
 }
 
 #slideshow .slider-second .iSlider,
@@ -324,13 +309,11 @@ ul {
 /* Start of the WhatWeDo block */
 
 #whatWeDo {
-	height: 660px;
 	background-image: url(../images/whatWeDo-bg.jpg);
+	padding: 72px 20px 63px
 }
 
 #iWhatWeDo {
-	/*outline: 1px solid blue;*/
-	padding-top: 72px;
 	max-width: 1170px;
 	margin: 0 auto;
 }
@@ -348,6 +331,7 @@ ul {
 
 #whatWeDo article {
 	display: inline-block;
+	vertical-align: top;
 	max-width: 46%;
 }
 
@@ -448,15 +432,12 @@ ul {
 /* Start of the Contacts block */
 
 #contacts {
-	height: 680px;
+	padding: 71px 20px 79px;
 	background-color: #f3f3f3;
 }
 
 #iContacts {
-	/*outline: 1px solid red;*/
-	max-width: 925px;
 	margin: 0 auto;
-	padding-top: 71px;
 }
 
 #contacts h2 {
@@ -481,8 +462,7 @@ ul {
 
 #contacts ul {
 	margin: 0 0 30px;
-	padding: 0;
-	list-style: none;
+	text-align: center;
 }
 
 #contacts ul li {
@@ -614,15 +594,13 @@ ul {
 /* Start of the Footer block */
 
 footer {
-	height: 303px;
+	padding: 35px 20px 49px;
 	background-color: #104e63;
 }
 
 #iFooter {
-	/*outline: 1px solid gold;*/
 	max-width: 1170px;
 	margin: 0 auto;
-	padding-top: 35px;
 	position: relative;
 }
 
@@ -632,7 +610,6 @@ footer nav {
 }
 
 footer ul {
-	/*outline: 1px solid black;*/
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -657,9 +634,8 @@ footer li a {
 }
 
 footer form {
-	display: inline-block;
-	margin-left: 142px;
-	position: absolute;
+	float: right;
+	position: relative;
 }
 
 footer form label {
@@ -697,6 +673,11 @@ footer form button {
  	position: absolute;
 	top: 26px;
 	right: 1px;
+	margin-left: -55px;
+}
+
+.clear {
+	clear: both;
 }
 
 #iFooter > img {
@@ -720,12 +701,14 @@ footer form button {
 	/* Start of the About block */
 
 	#about {
-		height: 500px;
 		background: url(../images/about-background-tablet-v.jpg);
+		background-size: cover;
+		padding-bottom: 87px;
 	}
 
 	#about header {
-		margin: 0 0 0 20px;
+		margin: 0;
+		display: block;
 	}
 
 	#about header > img {
@@ -788,7 +771,7 @@ footer form button {
 	}
 
 	#about article h1 {
-		font-size: 28px;
+		font-size: 27px;
 		line-height: 56px;
     margin-bottom: 10px;
 	}
@@ -851,8 +834,7 @@ footer form button {
 	/* Start of the Technologies block */
 
 	#technologies {
-		height: 400px;
-		padding-top: 40px;
+		padding: 40px 20px 52px;
 	}
 
 	#technologies h2 {
@@ -943,11 +925,7 @@ footer form button {
 	/* Start of the WhatWeDo block */
 
 	#whatWeDo {
-		height: 520px;
-	}
-
-	#iWhatWeDo {
-		padding: 30px 20px 0;
+		padding: 30px 20px 50px;
 	}
 
 	#whatWeDo #iWhatWeDo > h2 {
@@ -955,8 +933,16 @@ footer form button {
 		margin-bottom: 20px;
 	}
 
+	#whatWeDo article {
+		max-width: 48%;
+	}
+
 	#whatWeDo h2 + article {
 		margin-right: 3%;
+	}
+
+	#whatWeDo article ~ article p {
+		margin-bottom: 50px;
 	}
 
 	#whatWeDo article h2 {
@@ -993,11 +979,7 @@ footer form button {
 	/* Start of the Contacts block */
 
 	#contacts {
-		height: 560px;
-	}
-
-	#iContacts {
-		padding: 24px 20px 0;
+		padding: 24px 20px 47px;
 	}
 
 	#contacts h2 {
@@ -1048,11 +1030,7 @@ footer form button {
 	/* Start of the Footer block */
 
 	footer {
-		height: 210px;
-	}
-
-	#iFooter {
-		padding: 40px 17px 0;
+		padding: 40px 17px 17px;
 	}
 
 	footer nav {
@@ -1065,8 +1043,11 @@ footer form button {
 	}
 
 	footer form {
-		display: block;
-		margin: 0;
+		float: left;
+	}
+
+	footer .clear {
+		clear: none;
 	}
 
 	#iFooter > img {
@@ -1090,9 +1071,9 @@ footer form button {
 	/* Start of the About block */
 
 	#about {
-		height: 530px;
 		background: url(../images/about-background-mobile-v.jpg);
-		padding-top: 10px;
+		background-size: cover;
+		padding: 10px 20px 34px;
 	}
 
 	#about header {
@@ -1284,8 +1265,7 @@ footer form button {
 	/* Start of the Technologies block */
 
 	#technologies {
-		height: 602px;
-		padding-top: 20px;
+		padding: 20px 20px 29px;
 	}
 
 	#technologies h2 {
@@ -1398,13 +1378,12 @@ footer form button {
 	/* Start of the WhatWeDo block */
 	
 	#whatWeDo {
-		height: 750px;
 		background-image: url(../images/whatWeDo-bg-mobile-v.jpg);
+		padding: 20px 0 0;
 	}
 
 	#iWhatWeDo {
-		height: 750px;
-		padding: 20px 0 0;
+		height: 800px;
 		position: relative;
 	}
 
@@ -1446,6 +1425,10 @@ footer form button {
 		text-align: center;
 	}
 
+	#whatWeDo article ~ article p {
+    margin-bottom: 10px;
+  }
+
 	#whatWeDo article p + i {
 		margin-bottom: 10px;
 	}
@@ -1480,11 +1463,7 @@ footer form button {
 	/* Start of the Contacts block */
 
 	#contacts {
-		height: 730px;
-	}
-
-	#iContacts {
-		padding: 22px 17px 0;
+		padding: 22px 17px 30px;
 	}
 
 	#contacts h2 {
@@ -1550,18 +1529,13 @@ footer form button {
 	/* Start of the Footer block */
 
 	footer {
-		height: 480px;
-	}
-
-	#iFooter {
 		padding-top: 120px;
 	}
 
 	footer form {
-		display: block;
-		margin: 0;
-		top: 21px;
-		left: 18%;
+		position: absolute;
+		top: -105px;
+		left: calc((100% - 300px) / 2);
 	}
 
 	footer form label {

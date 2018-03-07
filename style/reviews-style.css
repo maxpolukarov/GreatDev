@@ -1,0 +1,592 @@
+@import url(../style/style.css);
+
+/* Start of the About block */
+
+#about {
+	padding: 20px 20px 78px;
+	background: url(../images/portfolio-header-bg.jpg);
+}
+
+#about header {
+	margin-bottom: 40px;
+}
+
+#about h1 {
+	color: #fff;
+	font-size: 50px;
+	font-weight: 700;
+	line-height: 69px;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+/* End of the About block */
+
+/* Start of the Reviews block */
+
+#reviews {
+	padding: 38px 20px 88px;
+}
+
+#iReviews {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+
+#reviews #iReviews button:first-child {
+	width: 170px;
+	height: 40px;
+	border: none;
+  background-image: linear-gradient(to right, #fa5120 0%, #004d67 100%);
+	float: right;
+	margin-bottom: 24px;
+	color: #fff;
+	font-size: 16px;
+	text-transform: uppercase;
+	text-align: left;
+	padding-left: 16px;
+	position: relative;
+	cursor: pointer;
+	outline: none;
+}
+
+#reviews #iReviews button:first-child img {
+	position: absolute;
+	top: 8px;
+	right: 15px;
+}
+
+#reviews section {
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 80px;
+}
+
+#reviews section article {
+	width: calc(97.7% / 2);
+	display: flex;
+	align-items: flex-start;
+	margin-bottom: 45px;
+}
+
+#reviews section article:nth-child(odd) {
+	margin-right: 2.3%;
+}
+
+#reviews section article:nth-child(7), 
+#reviews section article:nth-child(8) {
+	margin-bottom: 0;
+}
+
+#reviews section article img {
+	margin-right: 8.7%;
+}
+
+#reviews section article > div {
+	padding-top: 10px;
+	color: #090909;
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 25px;
+	width: 100%;
+}
+
+#reviews section article h3 {
+	font-weight: 700;
+	margin-bottom: 8px;
+}
+
+#reviews section article span {
+	display: block;
+	margin-bottom: 25px;
+}
+
+#reviews section article h4 {
+	margin-bottom: 8px;
+}
+
+#reviews section article iframe {
+	width: 100%;
+	height: 203px;
+}
+
+#reviews section + button {
+	display: block;
+	width: 160px;
+	height: 40px;
+	margin: 0 auto;
+	padding: 0;
+	border: none;
+	background-image: linear-gradient(to right, #fa5120 0%, #004d67 100%);
+}
+
+#reviews section + button a {
+	display: block;
+	height: 36px;
+	padding: 9px 0 0 26px;
+	text-align: left;
+	color: #fff;
+	font-weight: 400;
+	font-size: 16px;
+	text-transform: uppercase;
+	text-decoration: none;
+	position: relative;
+}
+
+#reviews section + button a img {
+	position: absolute;
+	top: 6px;
+	right: 10px;
+}
+
+/* End of the Reviews block */
+
+/* Start of the Dialog block */
+
+dialog {
+	z-index: 1;
+	position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 1002px;
+  width: 100%;
+	border-radius: 2px;
+	border: 1px solid #fa5120;
+	padding: 40px 50px 58px 50px;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+dialog > img {
+	position: absolute;
+	top: 32px;
+	right: 32px;
+	cursor: pointer;
+}
+
+dialog form > h2 {
+	color: #090909;
+	font-size: 50px;
+	text-transform: uppercase;
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+dialog #reviews-addPhoto-block {
+	position: absolute;
+}	
+
+dialog #reviews-addPhoto-block > div {
+	margin-bottom: 22px;
+}
+
+dialog .reviews-add-block h4 {
+	color: #090909;
+	font-size: 20px;
+	font-weight: 700;
+	display: inline-block;
+	margin-right: 15px;
+}
+
+dialog .reviews-add-block label input {
+	display: none;
+}
+
+dialog .reviews-add-block label img {
+	vertical-align: bottom;
+	cursor: pointer;
+}
+
+dialog .reviews-add-block span {
+	display: block;
+	color: #6e6e6e;
+	font-size: 14px;
+	font-weight: 300;
+}
+
+dialog #reviews-addPhoto-block > i {
+	display: block;
+	width: 152px;
+	height: 152px;
+	background-color: #7f7f7f;
+	border-radius: 50%;
+}
+
+dialog #reviews-addPhoto-block + div {
+	margin-bottom: 41px;
+}
+
+dialog #reviews-addPhoto-block + div div {
+	margin: 0 0 25px 222px;
+}
+
+dialog #reviews-addPhoto-block + div div:first-child {
+	margin-right: 7.7%;
+	display: inline-block;
+  width: calc((92.3% - 227px) / 2);
+}
+
+dialog #reviews-addPhoto-block + div div:nth-child(2) {
+	margin-left: 0;
+	display: inline-block;
+  width: calc((92.3% - 227px) / 2);
+}
+
+dialog #reviews-addPhoto-block + div label {
+	display: block;
+	color: #090909;
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+
+dialog #reviews-addPhoto-block + div input {
+	width: 100%;
+	padding: 10px 12px;
+	border-radius: 2px;
+	border: 1px solid #fa5120;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+dialog #reviews-addPhoto-block + div textarea {
+	border-radius: 2px;
+	border: 1px solid #fa5120;
+	width: 100%;
+	padding: 10px 12px;
+	height: 100px;
+}
+
+dialog form > div:last-child div {
+	display: inline-block;
+	vertical-align: top;
+	margin-right: 60px;
+}
+
+dialog form > div:last-child h4 {
+	margin-right: 6px;
+}
+
+dialog form > div:last-child img {
+	vertical-align: initial;
+}
+
+dialog form > div:last-child video {
+	width: calc(100% - 423px);
+	height: 302px;
+	background-color: #7f7f7f;
+	margin-right: 25px;
+	vertical-align: bottom;
+}
+
+dialog form > div:last-child button {
+	width: 170px;
+	height: 40px;
+	border: none;
+	padding: 0;
+	background-image: linear-gradient(to right, #fa5120 0%, #004d67 100%);
+}
+
+dialog form > div:last-child button a {
+	display: block;
+	height: 36px;
+	padding: 6px 0;
+	color: #ffffff;
+	font-size: 16px;
+	line-height: 26px;
+	text-transform: uppercase;
+	text-decoration: none;
+	position: relative;
+}
+
+dialog form > div:last-child button a img {
+	position: absolute;
+	top: 12px;
+	right: 10px;
+}
+
+/* End of the Dialog block */
+
+@media only screen and (max-width: 768px) {
+	
+	/* Start of the About block */
+
+	#about {
+		padding-bottom: 55px;
+		background: url(../images/portfolio-header-bg-tablet-v.jpg);
+	}
+
+	#about header {
+    margin-bottom: 35px;
+	}
+
+	#about header #menu-list,
+	#about header #menu-hunb {
+		z-index: 1;
+	}
+
+	#about header #menu-list > ul > li:first-child a {
+		color: #0d0d0e;
+	}
+
+	#about header #menu-list > ul > li:nth-child(6) a {
+		color: #fa5120;
+	}
+
+	#about h1 {
+		font-size: 43px;
+	}
+
+	/* End of the About block */
+
+	/* Start of the Reviews block */
+ 	
+ 	#reviews {
+		padding: 40px 20px;
+	}
+
+	#reviews button {
+		margin-bottom: 40px;
+	}
+
+	#reviews section {
+		margin-bottom: 48px;
+	}
+
+	#reviews section article {
+		width: calc(97% / 2);
+		margin-bottom: 50px;
+	}
+
+	#reviews section article:nth-child(odd) {
+		margin-right: 3%;
+	}
+
+	#reviews section article img {
+		width: 100px;
+		position: absolute;
+	}
+
+	#reviews section article > div div {
+		margin-left: 120px;
+	}
+
+	#reviews section article h4,
+	#reviews section article p {
+		margin-left: 22px;
+	}
+
+	#reviews section article iframe {
+		width: 94%;
+		height: 180px;
+		margin-left: 22px;
+	}
+
+	/* End of the Reviews block */
+
+	/* Start of the Dialog block */
+
+	dialog {
+		padding: 40px 60px 40px;
+		height: 100%;
+		overflow-y: scroll;
+	}
+
+	dialog > img {
+		top: 23px;
+		right: 23px;
+	}
+
+	dialog form > h2 {
+		font-size: 45px;
+		margin-bottom: 20px;
+	}
+
+	dialog #reviews-addPhoto-block + div {
+		margin-bottom: 13px;
+	}
+
+	dialog #reviews-addPhoto-block + div div {
+		margin: 0 0 10px 185px;	
+	}
+
+	dialog #reviews-addPhoto-block + div div:first-child {
+		margin-right: 0;
+		display: block;
+		width: initial;
+	}
+
+	dialog #reviews-addPhoto-block + div div:nth-child(2) {
+		margin-left: 185px;
+		display: block;
+		width: initial;
+	}
+
+	dialog #reviews-addPhoto-block + div div:last-child {
+		margin-left: 0;
+	}
+
+	dialog #reviews-addPhoto-block + div div:nth-child(3) input {
+		height: 72px;
+	}
+
+	dialog #reviews-addPhoto-block + div textarea {
+		height: 127px;
+	}
+
+	dialog form > div:last-child div {
+		margin-right: 25px;
+	}
+
+	dialog form > div:last-child video {
+		width: calc(100% - 188px);
+		height: 289px;
+		margin-right: 0;
+		margin-bottom: 34px;
+	}
+
+	dialog form > div:last-child button {
+		display: block;
+		margin: 0 auto;
+	}
+
+	/* End of the Dialog block */
+}
+
+@media only screen and (max-width: 480px) {
+
+	/* Start of the About block */
+
+	#about {
+		padding: 9px 18px 50px;
+		background-image: url(../images/portfolio-header-bg-mobile-v.jpg);	
+	}
+
+	#about header {
+    margin-bottom: 30px;
+	}
+
+	#about header #menu-list > ul > li:first-child {
+		background-color: #fff;
+	}
+
+	#about header #menu-list > ul > li:nth-child(6) {
+		background-color: #fa5120;
+	}
+
+	#about header #menu-list > ul > li:nth-child(6) a {
+		color: #fff;
+	}
+
+	#menu-hunb.opened [class*='bar-'] {
+		background-color: #fa5120;
+	}
+
+	#about h1 {
+		font-size: 29px;
+		line-height: 40px;
+	}
+
+	/* End of the About block */
+
+	/* Start of the Reviews block */
+
+	#reviews {
+		padding: 40px 18px;
+	}
+
+	#reviews button {
+		margin: 0 auto 24px;
+		float: none;
+		display: block;
+	}
+
+	#reviews section {
+		margin-bottom: 32px;
+	}
+
+	#reviews section article {
+		width: 100%;
+		margin-bottom: 35px;
+		padding-right: 22px;
+	}
+
+	#reviews section article:nth-child(odd) {
+		margin-right: 0;
+	}
+
+	#reviews section article img {
+		width: 75px;
+		position: absolute;
+	}
+
+	#reviews section article > div div {
+		margin-left: 100px;
+	}
+
+	#reviews section article iframe {
+		height: 220px;
+	}
+
+	/* End of the Reviews block */
+
+	/* Start of the Dialog block */
+
+	dialog {
+		padding: 30px 39px 20px;
+	}
+
+	dialog form > h2 {
+		font-size: 35px;
+		margin-bottom: 25px;
+	}
+
+	dialog #reviews-addPhoto-block {
+		position: relative;
+	}
+
+	dialog #reviews-addPhoto-block > div {
+		margin-bottom: 8px;
+	}
+
+	dialog #reviews-addPhoto-block label {
+		position: absolute;
+		top: 10px;
+		left: 125px;
+	}
+
+	dialog #reviews-addPhoto-block > i {
+		width: 77px;
+		height: 77px;
+		position: absolute;
+		top: -19px;
+		right: 0;
+	}
+
+	dialog #reviews-addPhoto-block + div {
+		margin-bottom: 6px;
+	}
+
+	dialog #reviews-addPhoto-block + div div {
+		margin: 0 0 10px;	
+	}
+
+	dialog #reviews-addPhoto-block + div div:nth-child(2) {
+		margin-left: 0;
+	}
+
+	dialog form > div:last-child div {
+		margin: 0 0 10px;
+		display: block;
+	}
+
+	dialog form > div:last-child video {
+		width: 100%;
+		height: 254px;
+		margin-bottom: 12px;
+	}
+
+	/* End of the Dialog block */
+}
